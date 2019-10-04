@@ -8,7 +8,12 @@ module.exports = (sequelize, DataTypes) => {
       email: DataTypes.STRING,
       password: DataTypes.STRING
     },
-    {}
+    {
+      timestamps: false,
+      defaultScope: {
+        attributes: { exclude: ["password"] }
+      }
+    }
   );
   Admin.associate = function(models) {
     Admin.hasMany(models.blog)
