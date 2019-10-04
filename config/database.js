@@ -26,6 +26,7 @@ module.exports = {
     password: process.env.DB_PASSWORD_PRODUCTION,
     database: process.env.DB_NAME_PRODUCTION,
     host:process.env.DB_HOST_PRODUCTION,
+    port:3036,
     dialect: "mysql",
     dialectOptions: {
       dateStrings: true,
