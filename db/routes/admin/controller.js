@@ -16,6 +16,7 @@ module.exports = {
     Admin.findAll({
       include:[{
         model:db.blog
+        
       }]
     })
       .then(result => {
